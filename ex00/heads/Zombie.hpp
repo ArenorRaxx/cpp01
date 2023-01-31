@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcorso <mcorso@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/29 06:41:40 by mcorso            #+#    #+#             */
-/*   Updated: 2023/01/29 07:01:51 by mcorso           ###   ########.fr       */
+/*   Updated: 2023/01/31 20:12:51 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
-
 #ifndef ZOMBIE_HPP
 # define ZOMBIE_HPP
+
+#include <string>
 
 class Zombie
 {

@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcorso <mcorso@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/29 06:57:41 by mcorso            #+#    #+#             */
-/*   Updated: 2023/01/29 07:02:57 by mcorso           ###   ########.fr       */
+/*   Updated: 2023/01/31 20:17:07 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../heads/Zombie.hpp"
 #include <string>
-#include "Zombie.hpp"
 
 void	randomChump(std::string name)
 {

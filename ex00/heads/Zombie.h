@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/31 20:10:47 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 20:23:31 by nikoraxx         ###   ########.fr       */
+/*   Created: 2023/01/31 20:11:21 by nikoraxx          #+#    #+#             */
+/*   Updated: 2023/01/31 20:14:22 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "heads/Zombie.h"
+#ifndef ZOMBIE_H
+# define ZOMBIE_H
 
-int	main(void)
-{
-	Zombie *new_zombie = new Zombie("Tony");
-	
-	randomChump("Marcus");
-	new_zombie->announce();
-	delete new_zombie;
-}
+#include "Zombie.hpp"
+
+void	randomChump(std::string name);
+Zombie	*newZombie(std::string name);
+
+
+#endif

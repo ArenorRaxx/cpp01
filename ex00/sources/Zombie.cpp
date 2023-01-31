@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcorso <mcorso@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/29 06:46:37 by mcorso            #+#    #+#             */
-/*   Updated: 2023/01/29 07:01:58 by mcorso           ###   ########.fr       */
+/*   Updated: 2023/01/31 20:22:52 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../heads/Zombie.hpp"
+#include <iostream>
 
 Zombie::Zombie(std::string name)
 {
@@ -19,10 +20,10 @@ Zombie::Zombie(std::string name)
 
 Zombie::~Zombie()
 {
-	std::cout << "Zombie " << this->name << " has been suppressed";
+	std::cout << "*KSHH* Central, Zombie " << this->name << " has been suppressed.\n";
 }
 
 void Zombie::announce(void)
 {
-	std::cout << this->name << ": BraiiiiiiinnnzzzZ...";
+	std::cout << this->name << ": BraiiiiiiinnnzzzZ...\n";
 }
