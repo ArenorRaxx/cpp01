@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/31 20:38:02 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 20:44:48 by nikoraxx         ###   ########.fr       */
+/*   Created: 2023/01/29 06:46:37 by mcorso            #+#    #+#             */
+/*   Updated: 2023/01/31 20:36:23 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "heads/Zombie.h"
+#include "../heads/Zombie.hpp"
+#include <iostream>
 
-void	test_horde(int n, std::string name)
+Zombie::Zombie()
 {
-	Zombie	*horde;
-
-	horde = zombieHorde(n, name);
-	for (int i = 0; i < n; i++)
-		horde[i].announce();
-	delete [] horde;
-
 }
 
-int	main(void)
+Zombie::Zombie(std::string name)
 {
-	test_horde(0, "Brian");
-	test_horde(10, "Marcus");
-	test_horde(30, "Mercredi");
+	this->name = name;
+}
+
+Zombie::~Zombie()
+{
+	std::cout << "*KSHH* Central, Zombie " << this->name << " has been suppressed.\n";
+}
+
+void Zombie::announce(void)
+{
+	std::cout << this->name << ": BraiiiiiiinnnzzzZ...\n";
+}
+
+void Zombie::giveName(std::string name)
+{
+	this->name = name;
 }

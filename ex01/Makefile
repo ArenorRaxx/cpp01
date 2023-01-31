@@ -4,7 +4,7 @@ C_PENDING			:= \033[0;36m
 C_SUCCESS			:= \033[0;32m
 
 ##		TARGET EXEC			##
-NAME	=	## Fill this field ##
+NAME	=	main
 
 ##		COMPIL FLAGS		##
 C++		=	c++
@@ -17,9 +17,11 @@ SRCDIR	=	sources
 OBJDIR	=	obj
 
 ##		SOURCES				##
-INCFILES	=	## Fill this field ##
+HEADFILES	=	Zombie.h	\
+				Zombie.hpp
 
-HEADFILES	=	## Fill this field ##
+SRCFILES	=	Zombie.cpp		\
+				zombieHorde.cpp
 
 ##		INCLUDE FILES		##
 HEAD	=	$(HEADFILES:%=$(HEADIR)/%)

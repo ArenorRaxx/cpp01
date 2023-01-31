@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/31 20:38:02 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 20:44:48 by nikoraxx         ###   ########.fr       */
+/*   Created: 2023/01/31 20:29:57 by nikoraxx          #+#    #+#             */
+/*   Updated: 2023/01/31 20:37:59 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "heads/Zombie.h"
+#include "../heads/Zombie.h"
 
-void	test_horde(int n, std::string name)
+Zombie*	zombieHorde(int n, std::string name)
 {
 	Zombie	*horde;
-
-	horde = zombieHorde(n, name);
+	
+	horde = new Zombie[n];
 	for (int i = 0; i < n; i++)
-		horde[i].announce();
-	delete [] horde;
-
-}
-
-int	main(void)
-{
-	test_horde(0, "Brian");
-	test_horde(10, "Marcus");
-	test_horde(30, "Mercredi");
+		horde[i].giveName(name);
+	return (horde);
 }
