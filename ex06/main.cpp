@@ -6,7 +6,7 @@
 /*   By: mcorso <mcorso@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 17:59:54 by mcorso            #+#    #+#             */
-/*   Updated: 2023/02/01 18:15:47 by mcorso           ###   ########.fr       */
+/*   Updated: 2023/02/01 18:34:06 by mcorso           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 int	main(int argc, char **argv)
 {
 	int			index = 0;
+	int			do_switch = 0;
 	Harl		new_harl;
 	std::string	level_of_complaint[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	
@@ -25,9 +26,17 @@ int	main(int argc, char **argv)
 		if (level_of_complaint[index] == argv[1]) break ;
 		index++;
 	}
-	if (index == 4)
-		new_harl.complain("NOTHING");
-	while (index < 4)
-		new_harl.complain(level_of_complaint[index++]);
+	do_switch = index >= 0 && index < 4;
+	switch (do_switch)
+	{
+		case 1:
+			for (int i = index; i < 4; i++)
+				new_harl.complain(level_of_complaint[i]);	
+			break;
+		
+		default:
+			new_harl.complain("NOTHING");
+			break;
+	}
 	return (0);
 }
