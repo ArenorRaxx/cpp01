@@ -4,7 +4,7 @@ C_PENDING			:= \033[0;36m
 C_SUCCESS			:= \033[0;32m
 
 ##		TARGET EXEC			##
-NAME	=	replace
+NAME	=	main
 
 ##		COMPIL FLAGS		##
 C++		=	c++
