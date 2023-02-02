@@ -6,11 +6,11 @@
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 20:10:47 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 20:23:31 by nikoraxx         ###   ########.fr       */
+/*   Updated: 2023/02/02 10:07:22 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "heads/Zombie.h"
+#include "heads/Zombie.hpp"
 
 int	main(void)
 {

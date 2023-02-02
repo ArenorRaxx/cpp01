@@ -6,13 +6,13 @@
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 20:38:02 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 21:35:34 by nikoraxx         ###   ########.fr       */
+/*   Updated: 2023/02/02 10:32:12 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "heads/Weapon.h"
-#include "heads/HumanA.h"
-#include "heads/HumanB.h"
+#include "heads/Weapon.hpp"
+#include "heads/HumanA.hpp"
+#include "heads/HumanB.hpp"
 
 int main()
 {

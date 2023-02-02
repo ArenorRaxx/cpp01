@@ -6,11 +6,11 @@
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 20:38:02 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 20:44:48 by nikoraxx         ###   ########.fr       */
+/*   Updated: 2023/02/02 10:06:36 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "heads/Zombie.h"
+#include "heads/Zombie.hpp"
 
 void	test_horde(int n, std::string name)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcorso <mcorso@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 17:59:54 by mcorso            #+#    #+#             */
-/*   Updated: 2023/02/01 18:34:06 by mcorso           ###   ########.fr       */
+/*   Updated: 2023/02/02 10:40:56 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,10 @@ int	main(int argc, char **argv)
 	std::string	level_of_complaint[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	
 	if (argc != 2)
+	{
+		std::cout << "--  Bad number of argument\n";
 		return (1);
+	}
 	while (index < 4)
 	{
 		if (level_of_complaint[index] == argv[1]) break ;
@@ -36,7 +39,7 @@ int	main(int argc, char **argv)
 		
 		default:
 			new_harl.complain("NOTHING");
-			break;
+			return (1);
 	}
 	return (0);
 }

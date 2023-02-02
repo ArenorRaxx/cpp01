@@ -6,15 +6,16 @@
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 21:27:10 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 21:43:09 by nikoraxx         ###   ########.fr       */
+/*   Updated: 2023/02/02 10:31:53 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HUMANB_HPP
 # define HUMANB_H
 
-#include "Weapon.h"
+#include "Weapon.hpp"
 #include <string>
+#include <iostream>
 
 class HumanB
 {

@@ -17,8 +17,7 @@ SRCDIR	=	sources
 OBJDIR	=	obj
 
 ##		SOURCES				##
-HEADFILES	=	Zombie.hpp		\
-				Zombie.h
+HEADFILES	=	Zombie.hpp
 
 SRCFILES	=	newZombie.cpp	\
 				randomChump.cpp	\

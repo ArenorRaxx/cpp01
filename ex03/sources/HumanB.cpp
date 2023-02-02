@@ -6,11 +6,11 @@
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 21:30:19 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 21:44:08 by nikoraxx         ###   ########.fr       */
+/*   Updated: 2023/02/02 10:31:59 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../heads/HumanB.h"
+#include "../heads/HumanB.hpp"
 
 HumanB::HumanB(std::string name):
 	name(name)

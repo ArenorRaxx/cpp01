@@ -6,7 +6,7 @@
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 21:01:30 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/01/31 21:11:01 by nikoraxx         ###   ########.fr       */
+/*   Updated: 2023/02/02 10:30:32 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define WEAPON_HPP
 
 #include <string>
+#include <iostream>
 
 class Weapon
 {

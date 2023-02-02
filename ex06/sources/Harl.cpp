@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcorso <mcorso@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 14:30:46 by mcorso            #+#    #+#             */
-/*   Updated: 2023/02/01 18:08:07 by mcorso           ###   ########.fr       */
+/*   Updated: 2023/02/02 10:40:06 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void Harl::complain(std::string level)
 		index++;
 	if (index == max_level)
 	{
-		std::cout << "[ Probably some useless and impertinent gibberish ]\n\n";
+		std::cout << "[ Probably some impertinent nonsense ]\n";
 		return ;
 	}
 	(this->*comment_function[index])();

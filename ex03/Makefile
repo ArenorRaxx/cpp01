@@ -18,11 +18,8 @@ OBJDIR	=	obj
 
 ##		SOURCES				##
 HEADFILES	=	HumanA.hpp		\
-				HumanA.h		\
 				HumanB.hpp		\
-				HumanB.h		\
 				Weapon.hpp		\
-				Weapon.h
 
 SRCFILES	=	HumanA.cpp		\
 				HumanB.cpp		\
