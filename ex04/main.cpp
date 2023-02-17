@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcorso <mcorso@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 10:16:20 by mcorso            #+#    #+#             */
-/*   Updated: 2023/02/01 13:30:43 by mcorso           ###   ########.fr       */
+/*   Updated: 2023/02/17 12:39:15 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	main(int argc, char **argv)
 
 static void	replace(std::string s1, std::string s2, std::string file_name)
 {
-	size_t			occurence_position;
+	size_t			occurrence_position;
 	std::string		buffer;
 	std::ifstream	original_file;
 	std::ofstream	created_file;
@@ -49,10 +49,15 @@ static void	replace(std::string s1, std::string s2, std::string file_name)
 	}
 	while (std::getline(original_file, buffer))
 	{
-		while ((occurence_position = buffer.find(s1)) != std::string::npos)
+		occurrence_position = 0;
+		while (occurrence_position != std::string::npos)
 		{
-			buffer = buffer.erase(occurence_position, s1.length());
-			buffer = buffer.insert(occurence_position, s2);
+			occurrence_position += s2.length() * bool(occurrence_position);
+			occurrence_position = buffer.find(s1, occurrence_position);
+			if (occurrence_position == std::string::npos)
+				break ;
+			buffer = buffer.erase(occurrence_position, s1.length());
+			buffer = buffer.insert(occurrence_position, s2);
 		}
 		created_file << buffer << '\n' << std::flush;
 	};
