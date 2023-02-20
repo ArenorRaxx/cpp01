@@ -6,7 +6,7 @@
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 21:02:56 by nikoraxx          #+#    #+#             */
-/*   Updated: 2023/02/02 10:32:05 by nikoraxx         ###   ########.fr       */
+/*   Updated: 2023/02/20 11:59:48 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Weapon::~Weapon()
 {
 }
 
-std::string &Weapon::getType(void)
+std::string const &Weapon::getType(void)
 {
 	std::string	&new_reference = this->type;
 	

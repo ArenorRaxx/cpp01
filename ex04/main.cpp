@@ -6,7 +6,7 @@
 /*   By: nikoraxx <nikoraxx@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 10:16:20 by mcorso            #+#    #+#             */
-/*   Updated: 2023/02/17 12:39:15 by nikoraxx         ###   ########.fr       */
+/*   Updated: 2023/02/20 12:05:20 by nikoraxx         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int	main(int argc, char **argv)
 		return (1);
 	}
 	replace(argv[2], argv[3], argv[1]);
+	return (0);
 }
 
 static void	replace(std::string s1, std::string s2, std::string file_name)
@@ -33,12 +34,10 @@ static void	replace(std::string s1, std::string s2, std::string file_name)
 	std::ifstream	original_file;
 	std::ofstream	created_file;
 
-	(void)s1;
-	(void)s2;
 	original_file.open(file_name.data());
 	if (original_file.fail() == true)
 	{
-		std::cout << "Could not open ./" << file_name << "\n";
+		std::cout << "Could not open \"" << file_name << "\"\n";
 		return ;
 	}
 	created_file.open(file_name.append(".replace").data());
@@ -50,7 +49,7 @@ static void	replace(std::string s1, std::string s2, std::string file_name)
 	while (std::getline(original_file, buffer))
 	{
 		occurrence_position = 0;
-		while (occurrence_position != std::string::npos)
+		while (!s1.empty() && occurrence_position != std::string::npos)
 		{
 			occurrence_position += s2.length() * bool(occurrence_position);
 			occurrence_position = buffer.find(s1, occurrence_position);
